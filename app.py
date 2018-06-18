@@ -22,6 +22,26 @@ class Card:
     def __str__(self):
         return f"{self.rank} of {self.suit}"
 
-card = Card("Hearts", "Two")
-print(card)
+# Tests the card class to make sure it works
+# card = Card("Hearts", "Two")
+# print(card)
+
+#Creating the class for a full deck of cards
+class Deck:
+    # Initial deck conditions
+    def __init__(self):
+        self.deck = [] # starts with an empty list
+        for suit in suits:
+            for rank in ranks:
+                self.deck.append(Card(suit, rank))
+    # Special print method to show the deck has all 52 cards
+    def __str__(self):
+        deck_full = ''
+        for card in self.deck:
+            deck_full += f"\n {card.__str__()}"
+        return f'The deck has: {deck_full}'
+
+# Testing out the Deck class to make it is creating all 52 cards
+print(Deck())
+
     
