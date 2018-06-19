@@ -288,7 +288,17 @@ while True:
         else:
             push(player_hand, dealer_hand)
         
-        
+    # Let the player know their chip total after the round finishes
+    print("\nPlayer's winnings stand at",player_chips.total)
+
+    # Ask the player if they would like to continue playing
+    new_game = input("Would you like to play another hand? Enter 'y' or 'n'")
+    if new_game[0].lower() == 'y':
+        playing = True
+        continue
+    else: 
+        print("Thanks for playing")
+        break
 
 
 
