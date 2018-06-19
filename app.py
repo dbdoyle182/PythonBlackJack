@@ -134,7 +134,16 @@ def hit(deck,hand):
     hand.add_card(deck.deal())
     hand.adjust_for_ace()
 
-
+# Test hit function
+# new_deck = Deck()
+# new_deck.shuffle()
+# user_hand = Hand()
+# hit(new_deck, user_hand)
+# print(user_hand)
+# hit(new_deck, user_hand)
+# print(user_hand)
+# hit(new_deck, user_hand)
+# print(user_hand)
 
 
 
