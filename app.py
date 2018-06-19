@@ -164,11 +164,11 @@ def hit_or_stand(deck, hand):
 
 # Testing hit or stand function
 
-new_deck = Deck()
-new_deck.shuffle()
-user_hand = Hand()
-hit_or_stand(new_deck, user_hand)
-print(user_hand)
+# new_deck = Deck()
+# new_deck.shuffle()
+# user_hand = Hand()
+# hit_or_stand(new_deck, user_hand)
+# print(user_hand)
 
 
 
