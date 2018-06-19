@@ -217,6 +217,13 @@ def player_wins(player, dealer, chips):
     print("Player wins!")
     chips.win_bet()
 
+# Function to call if the player busts
+def player_busts(player, dealer, chips):
+    print("Player busts!")
+    chips.lost_bet()
+
+
+
 
 
 
