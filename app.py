@@ -275,6 +275,19 @@ while True:
         show_all(player_hand, dealer_hand)
 
         # Test different winning scenarios if neither player nor dealer have busted yet
+        # If the dealer busts
+        if dealer_hand.value > 21:
+            dealer_busts(player_hand, dealer_hand, player_chips)
+        # If the dealer is closer to 21 than the player
+        elif dealer_hand.value > player_hand.value:
+            dealer_wins(player_hand, dealer_hand, player_chips)
+        # If the player is closer to 21 than the dealer
+        elif dealer_hand.value < player_hand.value:
+            player_wins(player_hand, dealer_hand, player_chips)
+        # If none of the above conditions are true than there is a tie
+        else:
+            push(player_hand, dealer_hand)
+        
         
 
 
