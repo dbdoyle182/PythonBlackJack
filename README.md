@@ -2,6 +2,8 @@
 
 A simple game of _Black Jack_ played in your terminal using Python. 
 
+![Game Play](playthrough.gif)
+
 ## Installation
 
 1. Make sure that you have [Python](https://www.python.org/downloads/) installed on your computer and the path variable correctly set.
