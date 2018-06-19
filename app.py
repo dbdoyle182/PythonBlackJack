@@ -69,11 +69,13 @@ class Hand:
     
     # Method to add a card to the players hand
     def add_card(self, card):
-        pass
+        self.cards.append(card)
+        self.value += values[card.rank]
 
     # Method for adjusting hand value for aces
     def adjust_for_ace(self):
-        pass
+        if card.rank == "Ace":
+            self.aces += 1
 
 
 
