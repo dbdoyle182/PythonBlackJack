@@ -222,6 +222,10 @@ def player_busts(player, dealer, chips):
     print("Player busts!")
     chips.lost_bet()
 
+# Function to call if the game ends tied
+def push(player, dealer):
+    print("Player and Dealer Tie!")
+
 
 
 
