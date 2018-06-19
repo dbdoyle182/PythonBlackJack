@@ -202,6 +202,13 @@ def show_all(player, dealer):
 # Calling show_all function
 # show_all(user_hand, dealer_hand)
 
+# Function to call if the dealer wins
+def dealer_wins(player, dealer, chips):
+    print("Dealer wins!")
+    chips.lose_bet()
+
+
+
 
 
 
