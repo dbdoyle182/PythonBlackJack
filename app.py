@@ -226,6 +226,34 @@ def player_busts(player, dealer, chips):
 def push(player, dealer):
     print("Player and Dealer Tie!")
 
+# Begin game play functionality
+
+while True:
+    print("Welcome to Python Black Jack! Try and get as close to 21 as possible, hit to get another card and stand to stay at your current value!")
+
+    # Initialize deck and shuffle the cards
+    deck = Deck()
+    deck.shuffle()
+
+    # Build the starting hand for the player
+    player_hand = Hand()
+    player_hand.add_card(deck.deal())
+    player_hand.add_card(deck.deal())
+
+    # Build the dealer's starting hand
+    dealer_hand = Hand()
+    dealer_hand.add_card(deck.deal())
+    dealer_hand.add_card(deck.deal())
+
+    # Set up the player's chips
+    player_chips = Chips() # Starts at 100 chips
+
+    # Prompt the player for their bet
+    take_bet(player_chips)
+
+    # Show the cards:
+    show_some(player_hand, dealer_hand)
+
 
 
 
