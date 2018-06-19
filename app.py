@@ -125,6 +125,10 @@ def take_bet(chips):
             else:
                 break
 
+# Test to make sure take bet function works
+# user_chips = Chips()
+# take_bet(user_chips)
+
 
 
 
