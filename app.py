@@ -170,6 +170,22 @@ def hit_or_stand(deck, hand):
 # hit_or_stand(new_deck, user_hand)
 # print(user_hand)
 
+# Function that shows some of the cards in the dealers hand and all in the users hand
+
+def show_some(player,dealer):
+    print("\nDealer's Hand:")
+    print(" <card hidden>")
+    print('',dealer.cards[1])  
+    print("\nPlayer's Hand:", *player.cards, sep='\n ')
+    
+# Testing the show_some function
+
+new_deck = Deck()
+new_deck.shuffle()
+user_hand = Hand()
+dealer_hand = Hand()
+hit
+
 
 
 
