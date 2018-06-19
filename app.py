@@ -175,8 +175,12 @@ def hit_or_stand(deck, hand):
 def show_some(player,dealer):
     print("\nDealer's Hand:")
     print(" <card hidden>")
-    print('',dealer.cards[1])  
-    print("\nPlayer's Hand:", *player.cards, sep='\n ')
+    try:
+        print('',dealer.cards[1])  
+    except:
+        print('Dealer only has one card')
+    finally:
+        print("\nPlayer's Hand:", *player.cards, sep='\n ')
     
 # Testing the show_some function
 
@@ -184,7 +188,12 @@ new_deck = Deck()
 new_deck.shuffle()
 user_hand = Hand()
 dealer_hand = Hand()
-hit
+hit(new_deck, user_hand)
+hit(new_deck, user_hand)
+hit(new_deck, dealer_hand)
+hit(new_deck, dealer_hand)
+
+show_some(user_hand, dealer_hand)
 
 
 
