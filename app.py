@@ -54,6 +54,9 @@ test_deck = Deck()
 # print(test_deck)
 # Testing the deal method attached 
 # print(test_deck.deal())
+# Testing the shuffle method
+test_deck.shuffle()
+print(test_deck.deal())
 
 
 
