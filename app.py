@@ -156,7 +156,7 @@ def hit_or_stand(deck, hand):
             hit(deck,hand)
         elif user_decision[0].lower() == 's':
             print("Player stands. Dealer is playing")
-            playing - False
+            playing = False
         else:
             print("Sorry, please use a different input")
             continue
