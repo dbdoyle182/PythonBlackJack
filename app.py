@@ -182,7 +182,7 @@ def show_some(player,dealer):
     finally:
         print("\nPlayer's Hand:", *player.cards, sep='\n ')
     
-# Testing the show_some function
+# Testing the show_some and show_all function
 
 new_deck = Deck()
 new_deck.shuffle()
