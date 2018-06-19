@@ -66,16 +66,38 @@ class Hand:
         self.cards = [] # Start with an empty hand
         self.value = 0 # Hand value begins at zero
         self.aces = 0 # Number of Aces in hand starts at zero
+
+    def __str__(self):
+        hand_full = ''
+        for card in self.cards:
+            hand_full += f"\n {card.__str__()}"
+        return f'Your hand has: {hand_full}' + f'\n Your hand value is {self.value}' + f'\n Your hand has {self.aces} aces'
     
     # Method to add a card to the players hand
     def add_card(self, card):
         self.cards.append(card)
         self.value += values[card.rank]
+        if card.rank == "Ace":
+            self.aces += 1 # add to self.aces
 
     # Method for adjusting hand value for aces
     def adjust_for_ace(self):
-        if card.rank == "Ace":
-            self.aces += 1
+        while self.value > 21 and self.aces:
+            self.value -= 10
+            self.aces -= 1
+
+
+# Tests for the Hand class
+my_hand = Hand()
+# Add a card to hand, check the values, check the ace count and make sure adjust for ace is working
+my_hand.add_card(Card("Diamonds", "Queen"))
+my_hand.add_card(Card("Hearts", "Ace"))
+my_hand.add_card(Card("Spades", "Two"))
+print(my_hand)
+my_hand.adjust_for_ace()
+print(my_hand)
+
+
 
 
 
