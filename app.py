@@ -182,6 +182,10 @@ def show_some(player,dealer):
     finally:
         print("\nPlayer's Hand:", *player.cards, sep='\n ')
     
+def show_all(player, dealer):
+    print("\nDealer's Hand:", *dealer.cards, sep='\n ')
+    print("\nPlayer's Hand:", *player.cards, sep='\n ')
+
 # Testing the show_some and show_all function
 
 new_deck = Deck()
@@ -193,7 +197,11 @@ hit(new_deck, user_hand)
 hit(new_deck, dealer_hand)
 hit(new_deck, dealer_hand)
 
-show_some(user_hand, dealer_hand)
+# Calling show_some function
+# show_some(user_hand, dealer_hand)
+# Calling show_all function
+# show_all(user_hand, dealer_hand)
+
 
 
 
