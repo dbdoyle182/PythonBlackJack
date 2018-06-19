@@ -152,9 +152,9 @@ def hit_or_stand(deck, hand):
     while True:
         user_decision = input("Would you like to Hit or Stand? Enter 'h' or 's' ")
 
-        if x[0].lower() == 'h':
+        if user_decision[0].lower() == 'h':
             hit(deck,hand)
-        elif x[0].lower() == 's':
+        elif user_decision[0].lower() == 's':
             print("Player stands. Dealer is playing")
             playing - False
         else:
@@ -162,6 +162,13 @@ def hit_or_stand(deck, hand):
             continue
         break
 
+# Testing hit or stand function
+
+new_deck = Deck()
+new_deck.shuffle()
+user_hand = Hand()
+hit_or_stand(new_deck, user_hand)
+print(user_hand)
 
 
 
