@@ -88,14 +88,28 @@ class Hand:
 
 
 # Tests for the Hand class
-my_hand = Hand()
+# my_hand = Hand()
 # Add a card to hand, check the values, check the ace count and make sure adjust for ace is working
-my_hand.add_card(Card("Diamonds", "Queen"))
-my_hand.add_card(Card("Hearts", "Ace"))
-my_hand.add_card(Card("Spades", "Two"))
-print(my_hand)
-my_hand.adjust_for_ace()
-print(my_hand)
+# my_hand.add_card(Card("Diamonds", "Queen"))
+# my_hand.add_card(Card("Hearts", "Ace"))
+# my_hand.add_card(Card("Spades", "Two"))
+# print(my_hand)
+# my_hand.adjust_for_ace()
+# print(my_hand)
+
+# Creating a chips class to track player wins, bets and starting bank
+class Chips:
+    def __init__(self):
+        self.total = 100
+        self.bet = 0
+    
+    # Method for win results
+    def win_bet(self):
+        self.total += self.bet
+    
+    # Method for lost results
+    def lose_bet(self):
+        self.total -= self.bet
 
 
 
