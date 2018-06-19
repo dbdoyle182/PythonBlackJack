@@ -188,19 +188,20 @@ def show_all(player, dealer):
 
 # Testing the show_some and show_all function
 
-new_deck = Deck()
-new_deck.shuffle()
-user_hand = Hand()
-dealer_hand = Hand()
-hit(new_deck, user_hand)
-hit(new_deck, user_hand)
-hit(new_deck, dealer_hand)
-hit(new_deck, dealer_hand)
+# new_deck = Deck()
+# new_deck.shuffle()
+# user_hand = Hand()
+# dealer_hand = Hand()
+# hit(new_deck, user_hand)
+# hit(new_deck, user_hand)
+# hit(new_deck, dealer_hand)
+# hit(new_deck, dealer_hand)
 
 # Calling show_some function
 # show_some(user_hand, dealer_hand)
 # Calling show_all function
 # show_all(user_hand, dealer_hand)
+
 
 
 
