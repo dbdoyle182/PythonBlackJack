@@ -129,6 +129,13 @@ def take_bet(chips):
 # user_chips = Chips()
 # take_bet(user_chips)
 
+# Function that allows the user to take a hit from the dealer
+def hit(deck,hand):
+    hand.add_card(deck.deal())
+    hand.adjust_for_ace()
+
+
+
 
 
 
