@@ -40,8 +40,22 @@ class Deck:
         for card in self.deck:
             deck_full += f"\n {card.__str__()}"
         return f'The deck has: {deck_full}'
+    # Shuffle method to rearrange the deck
+    def shuffle(self):
+        random.shuffle(self.deck)
+    
+    def deal(self):
+        return self.deck.pop()
+
+    
 
 # Testing out the Deck class to make it is creating all 52 cards
-print(Deck())
+test_deck = Deck()
+# print(test_deck)
+# Testing the deal method attached 
+# print(test_deck.deal())
+
+
+
 
     
