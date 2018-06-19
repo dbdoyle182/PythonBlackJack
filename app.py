@@ -254,6 +254,16 @@ while True:
     # Show the cards:
     show_some(player_hand, dealer_hand)
 
+    while playing: # Referring back to the hit or stand function defined previously
+
+        # Prompt for player to hit or stand
+        hit_or_stand(deck, player_hand)
+        show_some(player_hand, dealer_hand)
+
+        # Bust conditional statement
+        if player_hand,value > 21:
+            player_busts(player_hand, dealer_hand, player_chips)
+            break
 
 
 
