@@ -50,13 +50,30 @@ class Deck:
     
 
 # Testing out the Deck class to make it is creating all 52 cards
-test_deck = Deck()
+# test_deck = Deck()
 # print(test_deck)
+
 # Testing the deal method attached 
 # print(test_deck.deal())
+
 # Testing the shuffle method
-test_deck.shuffle()
-print(test_deck.deal())
+# test_deck.shuffle()
+# print(test_deck.deal())
+
+# Class for the hands of the player and the computer
+class Hand:
+    def __init__(self):
+        self.cards = [] # Start with an empty hand
+        self.value = 0 # Hand value begins at zero
+        self.aces = 0 # Number of Aces in hand starts at zero
+    
+    # Method to add a card to the players hand
+    def add_card(self, card):
+        pass
+
+    # Method for adjusting hand value for aces
+    def adjust_for_ace(self):
+        pass
 
 
 
