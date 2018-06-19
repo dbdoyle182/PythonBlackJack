@@ -296,7 +296,7 @@ while True:
     if new_game[0].lower() == 'y':
         playing = True
         continue
-    else new_game[0].lower() == 'n': 
+    else: 
         print("Thanks for playing")
         break
         
