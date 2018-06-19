@@ -220,7 +220,7 @@ def player_wins(player, dealer, chips):
 # Function to call if the player busts
 def player_busts(player, dealer, chips):
     print("Player busts!")
-    chips.lost_bet()
+    chips.lose_bet()
 
 # Function to call if the game ends tied
 def push(player, dealer):
